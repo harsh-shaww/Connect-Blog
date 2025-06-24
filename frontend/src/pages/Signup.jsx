@@ -37,7 +37,7 @@ const Signup = () => {
 
         try {
             dispatch(setLoading(true))
-            const response = await axios.post(`http://localhost:8000/api/v1/user/register`, user, {
+            const response = await axios.post(`https://connect-blog-w72o.onrender.com/user/register`, user, {
                 headers: {
                     "Content-Type": "application/json",
                 },
